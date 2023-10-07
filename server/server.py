@@ -11,12 +11,11 @@ from flask_cors import CORS
 import openai
 import pinecone
 
+openai.api_key = os.environ['OPENAI_API_KEY']
+
 pinecone.init(api_key=os.environ["PINECONE_API_KEY"],
 			  environment=os.environ["PINECONE_ENVIRONMENT"])
-index = pinecone.Index("arxiv-index")
-
-# Load environment variables
-# load_dotenv()
+index = pinecone.Index("arxiv-index-v2")
 
 # app settings
 app = Flask(__name__)
@@ -26,6 +25,10 @@ cors = CORS(app, resource={
 		"origins":"*"
 	}
 })
+
+def get_embedding(text, model="text-embedding-ada-002"):
+   text = text.replace("\n", " ")
+   return openai.Embedding.create(input = [text], model=model)['data'][0]['embedding']
 
 @app.route('/', methods=['GET'])
 def root_endpoint():
@@ -41,7 +44,17 @@ def root_endpoint():
 def chat():
 	data = request.get_json()
 	query = data['query']
-	print(index.describe_index_stats())
+	embedding = get_embedding(query)
+
+	nn = index.query(
+		  vector=embedding,
+		  top_k=3,
+		  include_values=True,
+		  include_metadata=True
+	)
+	for each in nn.matches:
+		print(each.metadata)
+
 	return jsonify({"response": "success"})
 
 if __name__ == "__main__":

@@ -17,15 +17,16 @@ def get_embedding(text, model="text-embedding-ada-002"):
 
 # Open the file in write mode
 search = arxiv.Search(
-	query="quantum",
-	max_results=10,
+	query="Large Language Models and RAGS",
+	max_results=10000,
 	sort_by=arxiv.SortCriterion.SubmittedDate
 )
 
 data_arr = []
 for i, result in enumerate(search.results()):
-	data = f'Title: {result.title}\nAuthors: {result.authors}\nSummary: {result.summary}\nPublished On: {result.published}\nCategory: {result.primary_category}\n\n'
+	authors = ','.join([x.name for x in result.authors])
+	data = f'Title: {result.title}\nAuthors: {authors}\nSummary: {result.summary}\nPublished On: {result.published}\nCategory: {result.primary_category}\n\n'
 	embedding = get_embedding(data)
-	data_arr.append((str(i), embedding))
+	data_arr.append((str(i), embedding, {"title": result.title, "summary": result.summary, "authors": authors}))
 
 index.upsert(vectors=data_arr)
