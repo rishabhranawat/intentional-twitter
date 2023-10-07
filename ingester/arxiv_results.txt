@@ -1,0 +1,177 @@
+Title: Topological Density Correlations in a Fermi Gas
+Authors: [arxiv.Result.Author('Pok Man Tam'), arxiv.Result.Author('Charles L. Kane')]
+Summary: A Fermi gas of non-interacting electrons, or ultra-cold fermionic atoms, has
+a quantum ground state defined by a region of occupancy in momentum space known
+as the Fermi sea. The Euler characteristic $\chi_F$ of the Fermi sea serves to
+topologically classify these gapless fermionic states. The topology of a $D$
+dimensional Fermi sea is physically encoded in the $D+1$ point equal time
+density correlation function. In this work, we first present a simple proof of
+this fact by showing that the evaluation of the correlation function can be
+formulated in terms of a triangulation of the Fermi sea with a collection of
+points, links and triangles and their higher dimensional analogs. We then make
+use of the topological $D+1$ point density correlation to reveal universal
+structures of the more general $M$ point density correlation functions in a $D$
+dimensional Fermi gas. Two experimental methods are proposed for observing
+these correlations in $D=2$. In cold atomic gases imaged by quantum gas
+microscopy, our analysis supports the feasibility of measuring the third order
+density correlation, from which $\chi_F$ can be reliably extracted in systems
+with as few as around 100 atoms. For solid-state electron gases, we propose
+measuring correlations in the speckle pattern of intensity fluctuations in
+nonlinear X-ray scattering experiments.
+Published On: 2023-10-05 17:57:58+00:00
+Category: cond-mat.quant-gas
+
+Title: An Uncertainty Principle for the Curvelet Transform, and the Infeasibility of Quantum Algorithms for Finding Short Lattice Vectors
+Authors: [arxiv.Result.Author('Yi-Kai Liu')]
+Summary: The curvelet transform is a special type of wavelet transform, which is
+useful for estimating the locations and orientations of waves propagating in
+Euclidean space. We prove an uncertainty principle that lower-bounds the
+variance of these estimates, for radial wave functions in n dimensions.
+  As an application of this uncertainty principle, we show the infeasibility of
+one approach to constructing quantum algorithms for solving lattice problems,
+such as the approximate shortest vector problem (approximate-SVP), and bounded
+distance decoding (BDD). This gives insight into the computational
+intractability of approximate-SVP, which plays an important role in algorithms
+for integer programming, and in post-quantum cryptosystems.
+  In this approach to solving lattice problems, one prepares quantum
+superpositions of Gaussian-like wave functions centered at lattice points. A
+key step in this procedure requires finding the center of each Gaussian-like
+wave function, using the quantum curvelet transform. We show that, for any
+choice of the Gaussian-like wave function, the error in this step will be above
+the threshold required to solve BDD and approximate-SVP.
+Published On: 2023-10-05 17:56:45+00:00
+Category: quant-ph
+
+Title: Characterizing and Mitigating Timing Noise-Induced Decoherence in Single Electron Sources
+Authors: [arxiv.Result.Author('Sungguen Ryu'), arxiv.Result.Author('Rosa López'), arxiv.Result.Author('Llorenç Serra'), arxiv.Result.Author('David Sanchez'), arxiv.Result.Author('Michael Moskalets')]
+Summary: Identifying and controlling decoherence in single electron sources (SES) is
+important for their applications in electron quantum optics and quantum
+information processing. Here we address a rather generic source of decoherence
+inherent to SES generating pico-second wave packets as in a recent experiment
+[J. D. Fletcher et al., Nat. Commun. 10, 5298 (2019)], namely, decoherence
+caused by timing noise in the source. Regardless of the specific microscopic
+mechanism, the source with timing noise generates an ensemble of temporally
+shifted wave packet instead of a single wave packet, and the density matrix in
+energy basis becomes squeezed along the diagonal. This distinctive feature
+allows us to propose a protocol to identify and characterize SES with timing
+noise. Using this protocol, we demonstrate that the purity of states decohered
+by timing noise can be readily enhanced by using an energy filtering via
+potential barriers.
+Published On: 2023-10-05 17:51:10+00:00
+Category: cond-mat.mes-hall
+
+Title: Echoes from bounded universes
+Authors: [arxiv.Result.Author('Renan B. Magalhães'), arxiv.Result.Author('Andreu Masó-Ferrando'), arxiv.Result.Author('Flavio Bombacigno'), arxiv.Result.Author('Gonzalo J. Olmo'), arxiv.Result.Author('Luís C. B. Crispino')]
+Summary: We construct a general class of modified Ellis wormholes, where one
+asymptotic Minkowski region is replaced by a bounded 2-sphere core,
+characterized by asymptotic finite areal radius. We pursue an in-depth analysis
+of the resulting geometry, outlining that geodesic completeness is guaranteed
+also when the radial function asymptotically shrinks to zero. Then, we study
+the evolution of scalar perturbations, bringing out how these geometric
+configurations can in principle affect the time-domain profiles of quasinormal
+modes, pointing out the distinctive features with respect to other black holes
+or wormholes geometries.
+Published On: 2023-10-05 17:50:15+00:00
+Category: gr-qc
+
+Title: Comparative study of light storage in antirelaxation-coated and buffer-gas-filled alkali vapor cells
+Authors: [arxiv.Result.Author('Marin Ðujić'), arxiv.Result.Author('D. Buhin'), arxiv.Result.Author('N. Šantić'), arxiv.Result.Author('D. Aumiler'), arxiv.Result.Author('T. Ban')]
+Summary: We perform a comparative study of light storage in antirelaxation-coated and
+buffer-gas-filled alkali-vapor cells using electromagnetically induced
+transparency (EIT) in warm rubidium vapor. The use of a buffer-gas-filled cell
+resulted in $\approx$10-fold improvement in storage time and efficiency
+compared to antirelaxation coated cells. Our findings contribute to the
+development of future field-deployable high-performance quantum memories.
+Published On: 2023-10-05 17:47:50+00:00
+Category: quant-ph
+
+Title: Atom interferometers in weakly curved spacetimes using Bragg diffraction and Bloch oscillations
+Authors: [arxiv.Result.Author('Michael Werner'), arxiv.Result.Author('Philip K. Schwartz'), arxiv.Result.Author('Jan-Niclas Kirsten-Siemß'), arxiv.Result.Author('Naceur Gaaloul'), arxiv.Result.Author('Domenico Giulini'), arxiv.Result.Author('Klemens Hammerer')]
+Summary: We present a systematic approach to determine all relativistic phases up to
+$\mathcal{O}(c^{-2})$ in light-pulse atom interferometers in weakly curved
+spacetime that are based on elastic scattering, namely Bragg diffraction and
+Bloch oscillations. Our analysis is derived from first principles using the
+parameterized post-Newtonian formalism. In the treatment developed here, we
+derive algebraic expressions for relativistic phases for arbitrary
+interferometer geometries in an automated manner. As case studies, we consider
+symmetric and antisymmetric Ramsey-Bord\'e interferometers, as well as a
+symmetric double diffraction interferometer with baseline lengths of 10 m and
+100 m. We compare our results to previous calculations conducted for a
+Mach-Zehnder interferometer.
+Published On: 2023-10-05 17:39:53+00:00
+Category: gr-qc
+
+Title: Spinning a levitated mechanical oscillator far into the deep-strong coupling regime
+Authors: [arxiv.Result.Author('Joanna A. Zielińska'), arxiv.Result.Author('Fons van der Laan'), arxiv.Result.Author('Andreas Norrman'), arxiv.Result.Author('René Reimann'), arxiv.Result.Author('Martin Frimmer'), arxiv.Result.Author('Lukas Novotny')]
+Summary: The field of levitodynamics has made substantial advancements in manipulating
+the translational and rotational degrees of freedom of levitated nanoparticles.
+Notably, rotational degrees of freedom can now be cooled to millikelvin
+temperatures and driven into GHz rotational speeds. However, in the case of
+cylindrically symmetric nanorotors, only the rotations around their short axes
+have been effectively manipulated, while the possibility to control rotation
+around the longer axis has remained a notable gap in the field. Here, we extend
+the rotational control toolbox by engineering an optically levitated
+nanodumbbell in vacuum into controlled spinning around its long axis with
+spinning rates exceeding 1 GHz. This fast spinning introduces deep-strong
+coupling between the nanodumbell's libration modes, such that the coupling rate
+$g$ exceeds the bare libration frequencies $\Omega_0$ by two orders of
+magnitude with $g/\Omega_0=724\pm 33$. Our control over the long-axis rotation
+opens the door to study the physics of deep-strong coupled mechanical
+oscillators and to observe macroscopic rotational quantum interference effects,
+thus laying a solid foundation for future applications in quantum technologies.
+Additionally, we find that our system offers great potential as a nanoscopic
+gyroscope with competitive sensitivity.
+Published On: 2023-10-05 17:33:54+00:00
+Category: physics.optics
+
+Title: Adaptive variational ground state preparation for spin-1 models on qubit-based architectures
+Authors: [arxiv.Result.Author('João C. Getelina'), arxiv.Result.Author('Cai-Zhuang Wang'), arxiv.Result.Author('Thomas Iadecola'), arxiv.Result.Author('Yong-Xin Yao'), arxiv.Result.Author('Peter P. Orth')]
+Summary: We apply the adaptive variational quantum imaginary time evolution (AVQITE)
+method to prepare ground states of one-dimensional spin $S=1$ models. We
+compare different spin-to-qubit encodings (standard binary, Gray, unary, and
+multiplet) with regard to the performance and quantum resource cost of the
+algorithm. Using statevector simulations we study two well-known spin-1 models:
+the Blume-Capel model of transverse-field Ising spins with single-ion
+anisotropy, and the XXZ model with single-ion anisotropy. We consider system
+sizes of up to $20$ qubits, which corresponds to spin-$1$ chains up to length
+$10$. We determine the dependence of the number of CNOT gates in the AVQITE
+state preparation circuit on the encoding, the initial state, and the choice of
+operator pool in the adaptive method. Independent on the choice of encoding, we
+find that the CNOT gate count scales cubically with the number of spins for the
+Blume-Capel model and quartically for the anistropic XXZ model. However, the
+multiplet and Gray encodings present smaller prefactors in the scaling
+relations. These results provide useful insights for the implementation of
+AVQITE on quantum hardware.
+Published On: 2023-10-05 17:30:47+00:00
+Category: quant-ph
+
+Title: Non-minimally coupled quintessence in the Gauss-Bonnet model, symmetry breaking, and cosmic acceleration
+Authors: [arxiv.Result.Author('H. Mohseni Sadjadi')]
+Summary: We consider a model consisting of a quintessence coupled to the Ricci scalar
+and the Gauss-Bonnet invariant. We propose a mechanism for the rising of dark
+energy in the matter era, alleviating the coincidence problem. The role of the
+Gauss-Bonnet invariant is to restore the initial $Z_2$ symmetry. The Ricci
+scalar breaks this symmetry during the Universe's expansion and activates the
+quintessence. In our model, the observational constraint on gravitational wave
+speed is respected.
+Published On: 2023-10-05 17:13:30+00:00
+Category: gr-qc
+
+Title: Quantifying High-Order Interdependencies in Entangled Quantum States
+Authors: [arxiv.Result.Author('Marco Alberto Javarone'), arxiv.Result.Author('Fernando E. Rosas'), arxiv.Result.Author('Paolo Facchi'), arxiv.Result.Author('Saverio Pascazio'), arxiv.Result.Author('Sebastiano Stramaglia')]
+Summary: Here, we leverage recent advances in information theory to develop a novel
+method to characterise the dominant character of the high-order dependencies of
+quantum systems. To this end, we introduce the Q-information: an
+information-theoretic measure capable of distinguishing quantum states
+dominated by synergy or redundancy. We illustrate the measure by investigating
+the properties of paradigmatic entangled Qubit states and find that -- in
+contrast to classical systems -- quantum systems need at least four variables
+to exhibit high-order properties. Furthermore, our results reveal that unitary
+evolution can radically affect the internal information organisation in a way
+that strongly depends on the corresponding Hamiltonian. Overall, the
+Q-information sheds light on novel aspects of the internal organisation of
+quantum systems and their time evolution, opening new avenues for studying
+several quantum phenomena and related technologies.
+Published On: 2023-10-05 17:00:13+00:00
+Category: quant-ph
+
