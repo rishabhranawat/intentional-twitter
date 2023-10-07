@@ -9,12 +9,11 @@ import warnings
 from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
 import openai
+import pinecone
 
-# Local application/library specific imports
-from llama_index import VectorStoreIndex, SimpleDirectoryReader
-from llama_index import ServiceContext, set_global_service_context
-from llama_index.llms import OpenAI
-os.environ["OPENAI_API_KEY"] = "..."
+pinecone.init(api_key=os.environ["PINECONE_API_KEY"],
+			  environment=os.environ["PINECONE_ENVIRONMENT"])
+index = pinecone.Index("arxiv-index")
 
 # Load environment variables
 # load_dotenv()
@@ -23,39 +22,27 @@ os.environ["OPENAI_API_KEY"] = "..."
 app = Flask(__name__)
 CORS(app)
 cors = CORS(app, resource={
-    r"/*":{
-        "origins":"*"
-    }
+	r"/*":{
+		"origins":"*"
+	}
 })
-
-# LLM Settings
-llm = OpenAI(model="gpt-3.5-turbo-instruct", temperature=0, max_tokens=256)
-service_context = ServiceContext.from_defaults(llm=llm)
-# service_context = ServiceContext.from_defaults(llm="local")
-set_global_service_context(service_context)
-
-documents = SimpleDirectoryReader('data').load_data()
-index = VectorStoreIndex.from_documents(documents)
 
 @app.route('/', methods=['GET'])
 def root_endpoint():
-    return jsonify(
-        {
-            "message": "T",
-            "endpoints": {
-                "chat": "/api/intentional-twitter"
-            }
-        }), 200
+	return jsonify(
+		{
+			"message": "Endpoints Documentation",
+			"endpoints": {
+				"chat": "/api/arxiv-scholar/chat"
+			}
+		}), 200
 
-@app.route('/chat', methods=['POST'])
+@app.route('/api/arxiv-scholar/chat', methods=['POST'])
 def chat():
 	data = request.get_json()
-
 	query = data['query']
-	query_engine = index.as_query_engine()
-	response = query_engine.query(query)
-
-	return jsonify({"response": response})
+	print(index.describe_index_stats())
+	return jsonify({"response": "success"})
 
 if __name__ == "__main__":
 	app.run(debug=True)
